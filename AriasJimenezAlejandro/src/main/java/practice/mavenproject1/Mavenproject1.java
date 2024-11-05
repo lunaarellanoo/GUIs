@@ -13,13 +13,12 @@ import javax.swing.*;
 public class Mavenproject1 {
 
     public static void main(String[] args) {
-        JFrame marco = new JFrame("MyJFrame");
-        Container contenedor = marco.getContentPane();
-        contenedor.setLayout(new FlowLayout());
-        JLabel field = new JLabel("Hola mundo");
-        contenedor.add(field);
-        marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        marco.setSize(200, 100);
-        marco.setVisible(true);
+        JFrame MyJFrame = new JFrame("MyJFrame");
+        
+        JLabel MyJLabel = new JLabel("Hola mundo");
+        MyJFrame.add(MyJLabel);
+        MyJFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        MyJFrame.setSize(200, 100);
+        MyJFrame.setVisible(true);
     }
 }
