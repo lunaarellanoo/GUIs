@@ -1,0 +1,23 @@
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class MyJFrame extends JFrame {
+    private JLabel myLabel;
+
+    public MyJFrame() {
+        // Configuración del JFrame
+        setTitle("Mi Ventana");
+        setSize(300, 200);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Crear y configurar JLabel
+        myLabel = new JLabel("Hola Mundo");
+        add(myLabel); // Agregar JLabel al JFrame
+
+        setVisible(true); // Hacer visible la ventana
+    }
+
+    public static void main(String[] args) {
+        new MyJFrame(); // Crear instancia de MyJFrame
+    }
+}
